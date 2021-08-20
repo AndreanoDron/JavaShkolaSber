@@ -5,6 +5,7 @@ import static java.util.Arrays.*;
 
 public class BinarySearch {
     public static void main(String[] args) {
+        System.out.println("Ведите число!!!");
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         int[] arr = {10, 20, 30, 40, 50, 60, 70, 80};
