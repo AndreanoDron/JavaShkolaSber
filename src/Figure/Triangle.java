@@ -2,36 +2,29 @@ package Figure;
 
 public class Triangle extends Snapes {
 
-    private int sideA;
-    private int sideB;
-    private int sideC;
+    private double sideA;
+    private double sideB;
+    private double sideC;
 
-    public Triangle(int sideA, int sideB, int sideC) {
-        this.sideA = sideA;
-        this.sideB = sideB;
-        this.sideC = sideC;
-    }
-
-    @Override
-    void getPerimetr() {
+    public Triangle(double sideA, double sideB, double sideC) {
         if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
             System.out.println("Дружише не коретное число или отрицательное!!!");
-        } else {
-            double per = sideA + sideB + sideC;
-            System.out.println("Периметр треугольника " + per);
+        }else {
+            this.sideA = sideA;
+            this.sideB = sideB;
+            this.sideC = sideC;
         }
     }
 
     @Override
-    void getPloshad() {
-        if (sideA <= 0 || sideB <= 0 || sideC <= 0) {
+    public double perimetr() {
+        return sideA + sideB + sideC;
+    }
 
-        } else {
+    @Override
+    public double ploshad() {
+        double p = (sideA + sideB + sideC) / 2;
+        return Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
+    }
+}  //треугольник
 
-
-            int p = (sideA + sideB + sideC) / 2;
-            double plosh = Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC));
-            System.out.println("Площадь треугольника " + plosh);
-        }
-    }  //треугольник
-}

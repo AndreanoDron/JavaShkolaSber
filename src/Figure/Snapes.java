@@ -2,8 +2,8 @@ package Figure;
 
 public abstract class Snapes { // фигуры
 
-   abstract void getPerimetr() ;
-   abstract  void getPloshad();
+   abstract double perimetr() ;
+   abstract double ploshad();
 
 
 }

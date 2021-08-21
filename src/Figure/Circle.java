@@ -1,36 +1,26 @@
 package Figure;
 
 public class Circle extends Snapes {//круг
-    private int radius;
+    private double radius;
     final double Pi = Math.PI;
 
-    public Circle(int radius) {
-        this.radius = radius;
-    }
 
-
-    @Override
-    void getPerimetr() {
+    public Circle(double radius) {
         if (radius <= 0) {
             System.out.println("Дружише не коретное число или отрицательное!!!");
 
-
-        } else {
-            double per = 2 * Pi * radius;
-            System.out.println("Периметр круга " + per);
+        }else {
+            this.radius = radius;
         }
-
     }
 
     @Override
-    void getPloshad() {
-        if (radius <= 0) {
-
-        } else {
-            double plosh = radius * radius * Pi;
-            System.out.println("Плошадь круга " + plosh);
-        }
+    public double perimetr() {
+        return 2 * Pi * radius;
     }
 
-
+    @Override
+    public double ploshad() {
+        return radius * radius * Pi;
+    }
 }

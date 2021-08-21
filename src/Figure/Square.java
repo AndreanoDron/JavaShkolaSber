@@ -1,31 +1,25 @@
 package Figure;
 
 public class Square extends Snapes {
-    private int side;
+    private double side;
 
-    public Square(int side) {
-        this.side = side;
-    }
-
-    @Override
-    void getPerimetr() {
+    public Square(double side) {
         if (side <= 0) {
             System.out.println("Дружише не коретное число или отрицательное!!!");
-
-        } else {
-            double per = (side + side) * 2;
-            System.out.println("Периметр квадрата " + per);
+        }else {
+            this.side = side;
         }
     }
 
     @Override
-    void getPloshad() {
-        if (side <= 0) {
+    double perimetr() {
+        return (side + side) * 2;
 
-        } else {
-            double plosh = side * side;
-            System.out.println("Плошадь квадрата " + plosh);
-        }
-    }  //квадрат
+    }
+
+    @Override
+    double ploshad() {
+        return side * side;
+    }
 
 }

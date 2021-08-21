@@ -11,6 +11,7 @@ public class BinarySearch {
         int[] arr = {10, 20, 30, 40, 50, 60, 70, 80};
         System.out.println("Ищем число " + number + " в массиве!!!");
         int x = getBinarySearch(number, arr);
+        int x1 = getBinarySearch2(number, arr);
         // для проверки System.out.println("Возврашаемое число по индексу = " + x);
         System.out.println("Возврашаемое число по индексу = " + x);
         if (x >= 0  ) {
@@ -19,6 +20,12 @@ public class BinarySearch {
         } else {
             System.out.println("Такого числа нет в массиве!!!");
         }
+    }
+
+    private static int getBinarySearch2(int number, int[] arr) {
+int x;
+
+        return number;
     }
 
     private static int getBinarySearch(int number, int[] arr) {
