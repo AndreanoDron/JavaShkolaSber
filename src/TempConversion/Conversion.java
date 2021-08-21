@@ -7,7 +7,7 @@ public class Conversion {
 
         System.out.println("Ведите температуру в Цельсия. ");
         Scanner scanner = new Scanner(System.in);
-        double cels = scanner.nextInt();
+        double cels = scanner.nextDouble();
         System.out.println("Перевод температуры Цельсия в Фаренгейта, Кельвины, Ньютона!!! ");
         conversionFarenget(cels);
         conversionKelvina(cels);
