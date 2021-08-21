@@ -18,7 +18,7 @@ public class Square extends Snapes {
     }
 
     @Override
-    double ploshad() {
+    public double ploshad() {
         return side * side;
     }
 

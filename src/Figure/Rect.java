@@ -22,7 +22,7 @@ public class Rect extends Snapes {
     }
 
     @Override
-    double ploshad() {
+    public double ploshad() {
 
         return sideA * sideB;
 

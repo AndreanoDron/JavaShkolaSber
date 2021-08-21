@@ -2,7 +2,7 @@ package Figure;
 
 public class Circle extends Snapes {//круг
     private double radius;
-    final double Pi = Math.PI;
+
 
 
     public Circle(double radius) {
@@ -16,11 +16,11 @@ public class Circle extends Snapes {//круг
 
     @Override
     public double perimetr() {
-        return 2 * Pi * radius;
+        return 2 * Math.PI * radius;
     }
 
     @Override
     public double ploshad() {
-        return radius * radius * Pi;
+        return radius * radius * Math.PI;
     }
 }
