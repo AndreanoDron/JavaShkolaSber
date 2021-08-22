@@ -3,9 +3,9 @@ package Figure;
 public class TestFigure {
     public static void main(String[] args) {
         Circle circle = new Circle(1);
+        System.out.printf("Длина окружности %3.2f Площадь окружности %3.2f",circle.perimetr(),circle.ploshad());
 
-        System.out.printf("Длина окружности  " + "%3.2f%n", circle.perimetr());
-        System.out.printf("Плошадь окружности  " + "%3.2f%n", circle.ploshad());
+
 
         Rect rect = new Rect(2, 1.3);
         System.out.printf("Длина Прямоугольника   " + "%3.2f%n", rect.perimetr());
