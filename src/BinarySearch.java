@@ -18,7 +18,7 @@ public class BinarySearch {
 
 
         // int x = getBinarySearch(number, arr);
-        
+
 
         //  для проверки System.out.println("Возврашаемое число по индексу = " + x);
 //        System.out.println("Возврашаемое число по индексу = " + x);
